@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.log
+*.pt
+*.safetensors
+.DS_Store
+desktop.ini

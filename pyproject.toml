@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-vela-h3"
+version = "1.0.0"
+description = "Trajectory-aware production execution optimizations for VDN-H3 / MiniMax H3 in ComfyUI"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/Speach1sdef178/ComfyUI-VELA-H3"
+Documentation = "https://github.com/Speach1sdef178/ComfyUI-VELA-H3#readme"
+Issues = "https://github.com/Speach1sdef178/ComfyUI-VELA-H3/issues"
+
+[tool.comfy]
+PublisherId = "speach1sdef178"
+DisplayName = "ComfyUI VELA H3"

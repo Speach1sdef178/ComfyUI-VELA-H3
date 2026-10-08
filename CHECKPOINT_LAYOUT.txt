@@ -1,0 +1,11 @@
+Place the separately distributed VDN checkpoint at:
+
+ComfyUI/models/vdn/stage-dmd-step-250-int8_convrot_comfyui/
+
+Required contents:
+  model_spec.json
+  linear_branch/model_int8_convrot_comfyui.safetensors
+  adapters/default/adapter_config.json
+  adapters/default/adapter_model.safetensors
+  adapters/turbo/adapter_config.json
+  adapters/turbo/adapter_model.safetensors

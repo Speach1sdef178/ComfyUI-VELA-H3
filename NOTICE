@@ -1,0 +1,13 @@
+ComfyUI VELA H3
+Copyright 2026 Speach1sdef178
+
+VELA is a derivative/continuation of the VDN-H3 ComfyUI optimization work published at:
+https://github.com/Speach1sdef178/ComfyUI-VDN-H3-24GB
+
+Project lineage and attribution:
+- VELA execution/attention optimization research and release engineering: Speach1sdef178.
+- The preceding ComfyUI VDN-H3 work retains attribution to Saganaki22 as recorded in the inherited Apache-2.0 LICENSE.
+- VDN-H3 architecture, training methodology and checkpoints: OpenVDN / VideoDeltaNet, https://github.com/OpenVDN/vdn-minimax-h3, Apache-2.0.
+- MiniMax-H3 model weights are separate from this package and remain subject to the MiniMax H3 Community License.
+
+This NOTICE is informational and does not modify the Apache License 2.0.
