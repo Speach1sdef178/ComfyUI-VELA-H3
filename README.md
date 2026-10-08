@@ -72,7 +72,7 @@ Clone or extract the repository to:
 <ComfyUI>/custom_nodes/ComfyUI-VELA-H3/
 ```
 
-The directory should directly contain `__init__.py`, `vdn_h3_24gb/`, `tools/`, `pyproject.toml` and this README.
+The directory should directly contain `__init__.py`, `vdn_h3_24gb/`, `pyproject.toml` and this README.
 
 ## VDN checkpoint
 
