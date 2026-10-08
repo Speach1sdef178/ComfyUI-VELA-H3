@@ -39,9 +39,35 @@ Matched end-to-end measurements on the project test system:
 | 0.8 MP / 9 sec | 4:07 | **3:57** | **4.0% faster** |
 | 0.8 MP / 10 sec | **4:12** | 4:17 | **2.0% slower** |
 
-Additional VELA scaling validation: **1.0 MP / 5 sec / 8 steps = 2:46 total sampler time, 20.80 s/it**. There is no matched VDN 1.1.0 1.0 MP measurement, so no speedup claim is made for that row.
+Additional VELA scaling validation:
+
+- **1.0 MP / 5 sec / 8 steps = 2:46** total sampler time, **20.80 s/it**. There is no matched VDN 1.1.0 1.0 MP measurement, so no speedup claim is made for this point.
+- **1344×768 / 16:9 / 1.032 MP / 8 sec / 8 steps = 4:40**.
+- **768×1344 / 9:16 / 1.032 MP / 5 sec / 8 steps = 3:03** on the first portrait run and **2:52** on a subsequent warm run.
 
 These results are intentionally reported as a full table rather than a single “up to” number. VELA's benefit is workload-dependent; the relative cost of the optimized attention paths changes with spatial and temporal sequence geometry.
+
+### Visual quality comparison — Raw 20 steps vs VDN + VELA 8 steps
+
+The comparisons below are intended for direct visual inspection of output quality, not as a pure VELA-only speed benchmark. The Raw MiniMax H3 examples use **20 steps**, while the VDN + VELA examples use **8 steps**, so the full timing difference must not be attributed to VELA alone.
+
+The purpose is to show how closely the practical 8-step VDN + VELA output can approach the visual result of a much slower 20-step raw generation under the same output geometry.
+
+#### Anime — 768×1344 · 9:16 · 1.032 MP · 5 sec
+
+**Raw MiniMax H3:** 20 steps · **8:07**  
+**VDN + VELA 1.0.0:** 8 steps · **3:03**
+
+https://github.com/user-attachments/assets/5ec53d7e-bb50-4d54-8717-e827bd85d3a2
+
+#### Realistic — 768×1344 · 9:16 · 1.032 MP · 5 sec
+
+**Raw MiniMax H3:** 20 steps · **7:50**  
+**VDN + VELA 1.0.0:** 8 steps · **2:52** (warm run)
+
+https://github.com/user-attachments/assets/89e198f4-63e0-48de-b7ab-36da21e8ca48
+
+These examples are presented as qualitative A/B comparisons. No claim of pixel-identical or universally identical quality is made; the videos are provided so the visual difference can be judged directly.
 
 See [BENCHMARKS.md](BENCHMARKS.md) for methodology and [RESEARCH.md](RESEARCH.md) for the complete research history.
 
